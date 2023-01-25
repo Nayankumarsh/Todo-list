@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todo.css">
+    <link rel="stylesheet" href="resp.css">
+    <title>TODO List</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="lis">
+                <li class="list">TODOs List </li>
+                <li class="list">Home</li>
+                <li class="list">About</li>
+                <li class="list">Item</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <div class="co">
+            <div class="Container1">
+                <h1>TODOs List</h1>
+            </div>
+            <div class="Container2">
+
+                <h3>Title</h3>
+                <input class="title" id="title" type="text" placeholder="Add an item to the list">
+                <h3>Description</h3>
+                <textarea class="Description" id = "Description" placeholder="Explain in detail"></textarea>
+                <button id="addlist" type="button">Add to list</button>
+                <button id="addlist" type="button" onclick="cleared()">Clear All</button>
+
+                <div class="list1">
+                    <h2>Your Items</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>SNo</th>
+                                <th>Item Title</th>
+                                <th>Item Description</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody">
+                            <tr>
+                                <th>1</th>
+                                <td>Learn JavaScript</td>
+                                <td>Learn JavaScript with codewithharry vedio</td>
+                                <td><button id="Delete" type="button" >Delete</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+<script src="to.js"></script>
+
+</html>
